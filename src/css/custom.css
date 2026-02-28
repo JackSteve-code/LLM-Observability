@@ -1,0 +1,70 @@
+/**
+ * Toptal-Inspired Engineering Theme - RNNs to Transformers Grey Edition
+ */
+
+:root {
+  --ifm-color-primary: #0052cc;
+  --toptal-green: #00cd6b;
+  
+  /* Dominant Grey Aesthetic */
+  --slate-grey-base: #f1f5f9;      /* Strong Grey Influence */
+  --slate-grey-dark: #e2e8f0;      
+  --deep-black: #0f172a;
+
+  --ifm-background-color: var(--slate-grey-base);
+  --ifm-navbar-background-color: var(--slate-grey-base);
+  --ifm-footer-background-color: var(--slate-grey-base);
+  
+  --ifm-heading-color: var(--deep-black);
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-weight-bold: 800;
+}
+
+/* The White "Content Card" for Math and Mermaid readability */
+.theme-doc-markdown {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 2px;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+/* Sidebar Styling - Clean Grey Influence */
+.menu {
+  background-color: var(--slate-grey-dark);
+  border-right: 1px solid #cbd5e1;
+}
+
+/* Hides category headers and carets for a flat, engineering look */
+.menu__list-item-collapsible, 
+.menu__caret {
+  display: none !important;
+}
+
+.menu__link--active {
+  background-color: #ffffff !important;
+  color: var(--toptal-green) !important;
+  border-left: 5px solid var(--toptal-green);
+  border-radius: 0;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3 {
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+.navbar__title {
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+/* Ensure math formulas (KaTeX) align with professional styling */
+.katex {
+  font-size: 1.1em;
+}
+
+/* Remove Docusaurus Logo from Sidebar Mobile */
+.navbar-sidebar__brand img {
+  display: none;
+}
