@@ -1,41 +1,34 @@
-# Website
+# LLM Observability in Production
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Comprehensive guide to production-grade observability for LLM-powered applications (2026 edition)
 
-## Installation
+Large Language Models bring incredible capabilities — but also unique risks: hallucinations, prompt injections, runaway costs, non-deterministic behavior, and compliance nightmares. Traditional metrics/logs/traces fall short. This repository hosts the definitive single-document guide to **LLM-specific observability** that actually works in production.
 
-```bash
-yarn
-```
+## What you'll find here
 
-## Local Development
+- Why traditional observability fails LLMs
+- Key failure modes + risk matrix
+- Essential metrics (quality, cost, latency, security)
+- Logging, tracing & RAG-specific patterns
+- Hallucination detection & LLM-as-a-judge techniques
+- Production tools comparison (LangSmith, W&B Weave, Phoenix, Datadog, Helicone, ...)
+- Security, compliance & prompt injection defenses
+- Real fintech case study: 60% cost reduction, 85% hallucination drop
+- Best practices checklist + future trends (AI-native observability)
 
-```bash
-yarn start
-```
+Includes code snippets (OpenTelemetry tracing, token/cost capture, validation wrappers), architecture diagrams, and practical tables.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Originally published at: https://jacksteve-code.github.io/LLM-Observability/
 
-## Build
+## Why this matters in 2026
 
-```bash
-yarn build
-```
+Most LLM apps are still "black boxes." Proper observability turns them into reliable, cost-effective, auditable systems — critical as organizations scale from prototypes to mission-critical workflows.
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## Usage
 
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
+Clone and read the guide, or host it yourself via GitHub Pages.
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+git clone https://github.com/jacksteve-code/LLM-Observability.git
+cd LLM-Observability
+# open index.md or _config.yml if customizing Jekyll
